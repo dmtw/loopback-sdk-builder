@@ -101,6 +101,9 @@ var context = {
   defaultValue: argv['v'] || 'disabled',
   fireloopOnly: argv['f'] || 'disabled'
 };
+console.log('context.framework', context.framework);
+console.log('context.isIo', context.isIo);
+console.log('context.driver', context.driver);
 
 function verifyPath() {
   if (fs.isEmptySync(context.outputFolder)) {
